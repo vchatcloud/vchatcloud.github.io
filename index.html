@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extra@v6.1.0/dist/aframe-extra.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -8,7 +9,9 @@
         <a-asset-item id="city" src="./assets/city/scene.gltf"></a-asset-item>
 
         <!-- City GLTF 모델-->
-        <a-entity gltf-model="#city" rotation="0 -90 0" scale="0.0005 0.0005 0.0005" position="0 0 0"></a-entity>
+        <a-entity gltf-model="#city" rotation="0 -90 0" scale="0.0005 0.0005 0.0005" position=".07 1 -.5"></a-entity>
+        <!-- dragon GLTF 모델-->
+        <a-entity gltf-model="#dragon" rotation="0 270 0" scale="1 1 1" animation-mixer></a-entity>
 
     </a-scene>
   </body>
